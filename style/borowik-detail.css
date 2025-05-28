@@ -1,0 +1,27 @@
+body {
+    background: rgb(236, 232, 1);
+}
+
+img {
+    height: 70vh;
+    padding-top: 40px;
+}
+
+.title {
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+
+.section-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.powrot {
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    font-size: 30px;
+}
