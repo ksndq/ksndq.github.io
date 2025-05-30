@@ -17,8 +17,3 @@ body {
     transform: translateX(-50%);
 }
 
-footer {
-    position: absolute;
-    top: 100%;
-    margin-top: -200px;
-} 
