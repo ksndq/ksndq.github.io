@@ -15,8 +15,12 @@ p {
     color: rgb(189, 154, 122);
 }
 
-a:visited {
+a:link {
     color: red;
+}
+
+a:visited {
+    color: brown;
 }
 
 footer {
