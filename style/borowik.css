@@ -5,45 +5,48 @@ body {
     position: relative;
 }
 
-.title {
-    flex-grow: 1;
+.section-one {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.title-and-ter {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: space-between;
-    height: 100%;
-    padding-top: 50px;
-    font-size: 100px;
-}
-
-.section-one {
+    text-align: right;
     width: 100%;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 90%;
-    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
-.image-sec {
+.title {
+    font-size: 100px;
+    margin-bottom: 10px;
+}
+
+.section-one .image-sec {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px;
+    padding: 30px;
 }
 
 .image-sec img {
-    height: 15vh;
+    max-width: 100%;
+    height: 20vh;
+    width: auto;
 }
 
 .ter {
     font-size: 25px;
-    position: absolute;
-    top: 200px;
-    right: 100px;
-    width: 1000px;
-    text-align: right;
 }
 
 .section-two {
@@ -58,7 +61,7 @@ body {
 
 .section-three {
     position: relative;
-    margin-top: 40px;
+    margin-top: 70px;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -78,4 +81,38 @@ td {
 
 footer {
     background: rgb(144, 238, 144);
-} 
+}
+
+@media (min-width: 768px) {
+    .section-one {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .title-and-ter {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right;
+        height: 100%;
+        padding-top: 0;
+        padding-right: 0;
+        padding-left: 20px;
+    }
+
+    .title {
+        font-size: 100px;
+        margin-bottom: 10px;
+    }
+
+    .ter {
+        font-size: 25px;
+        width: auto;
+    }
+
+    .section-one .image-sec {
+        padding: 50px;
+    }
+}
